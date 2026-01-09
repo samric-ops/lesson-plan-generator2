@@ -24,7 +24,7 @@ def generate_lesson_content(api_key, subject, grade, quarter, content_std, perf_
         genai.configure(api_key=api_key)
         
         # Using a standard model that is generally available
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""
         You are an expert teacher. Create a JSON object for a Daily Lesson Plan (DLP).
@@ -429,3 +429,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
